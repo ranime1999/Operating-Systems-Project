@@ -1,0 +1,199 @@
+fscanf(open, "%s", &order);
+				//printf("\n order =  \n");
+				while(strcmp(order, "#")!=0)
+				{
+				if(strcmp(order, "Add")==0)
+				{
+				char employee_name[50];
+				fscanf(open, "%s", &employee_name);
+				int employee_salary=0;
+				fscanf(open, "%d", &employee_salary);
+				Add_Request_Sender(msgqid,pids[1],employee_name,employee_salary);
+				}
+
+
+				if(strcmp(order, "Acquire")==0)
+				{
+				int acq_key=0;
+				fscanf(open, "%d", &acq_key);
+				Requests_Sender(msgqid,acquire,pids[1],acq_key);
+				}
+				if(strcmp(order, "Sleep")==0)
+				{
+				int sleep_value=0;
+				fscanf(open, "%d", &sleep_value);
+				sleep(sleep_value);
+				}
+				if(strcmp(order, "Modify")==0)
+				{
+				int mod_key=0;
+				fscanf(open, "%d", &mod_key);
+				char mod_symb[50];
+				fscanf(open, "%s", &mod_symb);
+				int mod_salary=0;
+
+				fscanf(open, "%d", &mod_salary);
+
+				Modify_Request_Sender(msgqid,pids[1],mod_key,mod_salary,mod_symb);
+				}
+
+				if(strcmp(order, "Release")==0)
+				{
+				int rel_key=0;
+				fscanf(open, "%d", &rel_key);
+				Requests_Sender(msgqid,release,pids[1],rel_key);
+				}
+				fscanf(open, "%s", &order);
+				}
+				if(strcmp(order, "#")==0)
+				{
+				printf("\n This child has finished his tasks \n\n");
+				}
+				while(1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+fscanf(open, "%s", &order);
+				printf("\n order =  \n");
+				while(strcmp(order, "#")!=0)
+				{
+				if(strcmp(order, "Add")==0)
+				{
+				char employee_name[50];
+				fscanf(open, "%s", &employee_name);
+				int employee_salary=0;
+				fscanf(open, "%d", &employee_salary);
+				Add_Request_Sender(msgqid,pids[1],employee_name,employee_salary);
+				}
+
+
+				if(strcmp(order, "Acquire")==0)
+				{
+				int acq_key=0;
+				fscanf(open, "%d", &acq_key);
+				Requests_Sender(msgqid,acquire,pids[1],acq_key);
+				}
+				if(strcmp(order, "Sleep")==0)
+				{
+				int sleep_value=0;
+				fscanf(open, "%d", &sleep_value);
+				sleep(sleep_value);
+				}
+				if(strcmp(order, "Modify")==0)
+				{
+				int mod_key=0;
+				fscanf(open, "%d", &mod_key);
+				char mod_symb[50];
+				fscanf(open, "%s", &mod_symb);
+				int mod_salary=0;
+				fscanf(open, "%d", &mod_salary);
+
+				Modify_Request_Sender(msgqid,pids[1],mod_key,mod_salary,mod_symb);
+				}
+
+				if(strcmp(order, "Release")==0)
+				{
+				int rel_key=0;
+				fscanf(open, "%d", &rel_key);
+				Requests_Sender(msgqid,release,pids[1],rel_key);
+				}
+				fscanf(open, "%s", &order);
+				}
+				if(strcmp(order, "#")==0)
+				{
+				printf("\n This child has finished his tasks \n\n");
+				}
+				//while(1);
+
+
+
+
+////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+fscanf(open, "%s", &order);
+				//printf("\n order =  \n");
+				while(strcmp(order, "#")!=0)
+
+				{
+				if(strcmp(order, "Add")==0)
+				{
+				char employee_name[50];
+				fscanf(open, "%s", &employee_name);
+				int employee_salary=0;
+				fscanf(open, "%d", &employee_salary);
+				//printf("\n child 2 add %s %d \n",employee_name,employee_salary);
+				Add_Request_Sender(msgqid,pids[1],employee_name,employee_salary);
+				}
+
+
+				if(strcmp(order, "Acquire")==0)
+				{
+				int acq_key=0;
+				fscanf(open, "%d", &acq_key);
+				Requests_Sender(msgqid,acquire,pids[1],acq_key);
+				}
+				if(strcmp(order, "Sleep")==0)
+				{
+				int sleep_value=0;
+				fscanf(open, "%d", &sleep_value);
+				sleep(sleep_value);
+				}
+				if(strcmp(order, "Modify")==0)
+				{
+				int mod_key=0;
+				fscanf(open, "%d", &mod_key);
+				char mod_symb[50];
+				fscanf(open, "%s", &mod_symb);
+				int mod_salary=0;
+				fscanf(open, "%d", &mod_salary);
+
+				Modify_Request_Sender(msgqid,pids[1],mod_key,mod_salary,mod_symb);
+				}
+
+				if(strcmp(order, "Release")==0)
+				{
+				int rel_key=0;
+				fscanf(open, "%d", &rel_key);
+				Requests_Sender(msgqid,release,pids[1],rel_key);
+				}
+				fscanf(open, "%s", &order);
+				}
+				if(strcmp(order, "#")==0)
+				{
+				printf("\n This child has finished his tasks \n\n");
+				}
+
+
+
+
+/////////////////////////////////////////////////
+

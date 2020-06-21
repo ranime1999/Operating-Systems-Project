@@ -1,0 +1,67 @@
+backup
+
+//////////////////////////////////////////////////////////////////////////////////////////
+/*bool addRecordToDatabase(char* name , int salary,int key, struct Record * Database)
+{   
+
+	printf("\n trying add and database len=%d \n",DatabaseLength);
+    if (DatabaseLength == 1000 )
+        return false ;
+    else 
+    { 
+	  //(Database+DatabaseLength)->Key = key; 
+	Database[DatabaseLength].Key= key;
+        Database[DatabaseLength].Salary = salary;
+        strcpy(Database[DatabaseLength].Name, name);
+	
+        return true ; 
+    }
+
+}*/
+/*
+bool addRecordToDatabase(char* name , int salary,int key, struct Record * Database)
+{
+
+//printf("\n trying add and database len=%d \n",DatabaseLength);
+printf("\n trying add \n");
+int NumberofRecords=key;
+if(NumberofRecords==1000)
+{
+
+return false;
+
+}
+else
+{
+(Database+NumberofRecords)->Key=key;
+Database[NumberofRecords].Salary=salary;
+strcpy(Database[NumberofRecords].Name, name);
+return true;
+
+
+
+}
+
+
+}
+*/
+/*bool addRecordToDatabase(char* name , int salary,int key, struct Record * Database)
+{   
+
+	printf("\n trying add and database len=%d \n",DatabaseLength);
+    if (DatabaseLength == 1000 )
+        return false ;
+    else 
+    { 
+	  //(Database+DatabaseLength)->Key = key; 
+	Database[DatabaseLength].Key= key;
+        Database[DatabaseLength].Salary = salary;
+        strcpy(Database[DatabaseLength].Name, name);
+	
+        return true ; 
+    }
+
+}*/
+
+
+

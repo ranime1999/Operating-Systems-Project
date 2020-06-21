@@ -1,0 +1,16 @@
+Child1
+Query ExactName Omar
+Add Noha 3000
+Acquire 1
+Modify 1 + 500
+Sleep 2
+Release 1
+Query ExactName Omar
+#
+Child2
+Add Omar 7000
+Acquire 2
+Modify 2 - 300
+Sleep 4
+Release 2
+#

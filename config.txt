@@ -1,0 +1,15 @@
+2
+Child1
+Add Bahaa 3000
+Acquire 1
+Modify 1 + 500
+Sleep 2
+Release 1
+#
+Child2
+Add Omar 7000
+Acquire 2
+Modify 2 - 300
+Sleep 4
+Release 2
+#
